@@ -13,7 +13,7 @@ export default function App() {
     <main>
       <Header />
       <TabNav />
-      <Route exact path="/" render={props => <WelcomePage {...props} />} />
+      <Route exact path="/Home" render={props => <WelcomePage {...props} />} />
       <Route exact path="/CharacterList" render={props => <CharacterList {...props} />} />
       <Route exact path="/LocationsList" render={props => <LocationsList {...props} />} />
        <Route exact path="/EpisodeList" render={props => <EpisodeList {...props} />} />
