@@ -3,10 +3,7 @@ import axios from "axios";
 import LocationCard from "./LocationCard";
 import styled from "styled-components";
 
-const LocationList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
+
 
 const LocationsList = props => {
   // TODO: Add useState to track data from useEffect
@@ -30,11 +27,11 @@ const LocationsList = props => {
   }, []);
 
   return (
-    <LocationList>
+    <section className="location-list grid-view">
       {locations.map(location => (
         <LocationCard key={location.id} location={location} />
       ))}
-    </LocationList>
+    </section>
   );
 };
 export default LocationsList;

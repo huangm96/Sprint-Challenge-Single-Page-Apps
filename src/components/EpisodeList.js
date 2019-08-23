@@ -24,7 +24,7 @@ const EpisodeList = props => {
   }, []);
 
   return (
-    <section className="character-list grid-view">
+    <section className="episode-list grid-view">
       {episodes.map(episode => (
         <EpisodeCard key={episode.id} episode={episode} />
       ))}
